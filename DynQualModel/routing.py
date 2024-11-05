@@ -804,8 +804,8 @@ class Routing(object):
               
         for i_loop in range(number_of_loops):
             
-            #msg = "sub-daily time step "+str(i_loop+1)+" from "+str(number_of_loops)
-            #logger.info(msg)
+            msg = "sub-daily time step "+str(i_loop+1)+" from "+str(number_of_loops)
+            logger.info(msg)
             
             if self.floodPlain:
                 self.dynamicFracWat, self.water_height, alpha, dischargeInitial = self.kinAlphaComposite(channelStorageForRouting)
